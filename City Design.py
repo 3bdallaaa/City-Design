@@ -1,5 +1,4 @@
 # Mohamed Abdalla
-# ID: 19106978
 
 from OpenGL.GL import *
 from OpenGL.GLUT import *
@@ -11,7 +10,7 @@ import numpy as np
 textures = None
 sky= (0.0, 1.0, 1.0); grass =(0.3, 1, 0)
 circles =[
-    ((-420,240), 22, (1.0, 0.9, 0.0)), #sun
+    ((-420,240), 22, (1.0, 0.9, 0.0)), # sun
     ((470, 40 ), 17, (1.0, 0.0, 0.0)), # red
     ((470,  5 ), 17, (1.0, 1.0, 0.0)), # yellow
     ((470,-30 ), 17, (0.0, 1.0, 0.0)), # green
@@ -27,12 +26,12 @@ def load_textures():
 
     global textures
     texture_paths = {
-        0: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/Buildings4.png",
-        1: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/lights.png",
-        2: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/Right people (Day).png",
-        3: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/Left people (Day).png",
-        4: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/Rocket.png",
-        5: "C:/Users/Dell/Downloads/Computer Graphics/Lab/Assignment3/LED.png"
+        0: "C:/Buildings.png",
+        1: "C:/Lights.png",
+        2: "C:/Right people.png",
+        3: "C:/Left people.png",
+        4: "C:/Rocket.png",
+        5: "C:/LED.png"
     }
     
     textures = glGenTextures(10)    
